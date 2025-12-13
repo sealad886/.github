@@ -1,8 +1,9 @@
 blank_issues_enabled: true
-contact_links:
-  - name: Community Support
-    url: https://github.com/sealad886/.github/discussions
-    about: Please ask and answer questions here.
-  - name: Security Issue
-    url: https://github.com/sealad886/.github/security/advisories/new
-    about: Please report security vulnerabilities through GitHub Security Advisories.
+contact_links: []
+# Uncomment and customize the following if you want to add custom contact links:
+#  - name: Community Support
+#    url: https://github.com/YOUR_USERNAME/YOUR_REPO/discussions
+#    about: Please ask and answer questions here.
+#  - name: Security Issue
+#    url: https://github.com/YOUR_USERNAME/YOUR_REPO/security/advisories/new
+#    about: Please report security vulnerabilities through GitHub Security Advisories.
