@@ -1,4 +1,7 @@
 version: 2
+# Note: Dependabot will automatically skip package ecosystems when the relevant
+# dependency files (package.json, requirements.txt, Dockerfile, etc.) are not
+# present in the repository. No errors will be generated for missing files.
 updates:
   # Enable version updates for npm
   - package-ecosystem: "npm"

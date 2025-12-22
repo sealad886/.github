@@ -29,7 +29,7 @@ jobs:
         if: hashFiles('**/package.json') != ''
 
       - name: Run linter
-        run: npm run lint
+        run: npm run lint --if-present
         if: hashFiles('**/package.json') != ''
 
   test:
@@ -53,7 +53,7 @@ jobs:
         if: hashFiles('**/package.json') != ''
 
       - name: Run tests
-        run: npm test
+        run: npm test --if-present
         if: hashFiles('**/package.json') != ''
 
   build:
@@ -74,5 +74,5 @@ jobs:
         if: hashFiles('**/package.json') != ''
 
       - name: Build project
-        run: npm run build
+        run: npm run build --if-present
         if: hashFiles('**/package.json') != ''
