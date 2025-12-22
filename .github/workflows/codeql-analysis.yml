@@ -24,7 +24,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Initialize CodeQL
-      uses: github/codeql-action/init@v3
+      uses: github/codeql-action/init@v4
       # CodeQL will auto-detect languages in the repository
       # Supports: cpp, csharp, go, java, javascript, python, ruby, swift, kotlin
       # For manual language specification, use:
@@ -32,7 +32,7 @@ jobs:
       #   languages: javascript, python
 
     - name: Autobuild
-      uses: github/codeql-action/autobuild@v3
+      uses: github/codeql-action/autobuild@v4
 
     - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@v3
+      uses: github/codeql-action/analyze@v4
