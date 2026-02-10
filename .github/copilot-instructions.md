@@ -45,7 +45,7 @@ This is the `sealad886/.github` repository — a special GitHub repo that provid
 
 This repository has **no application code** — it only contains Markdown docs, YAML configs, and GitHub workflow definitions. There is no build step, test suite, or linter to run locally.
 
-The default CI workflow (`.github/workflows/ci.yml`) is designed for repos that *do* contain code. It conditionally runs only when a `package.json` exists:
+The default CI workflow (`.github/workflows/ci.yml`) is designed for repos that *do* contain code. A lightweight `check` job detects whether `package.json` exists; if it does not, the lint, test, and build jobs are **skipped entirely** (no runner allocated):
 
 - **Lint:** `npm ci && npm run lint --if-present` (Node LTS)
 - **Test:** `npm ci && npm test --if-present` (Node 18.x & 20.x matrix)
@@ -88,7 +88,7 @@ SECURITY.md                       ← Security policy and vulnerability reportin
 
 ### CI (`.github/workflows/ci.yml`)
 - Triggers on push/PR to `main`, `master`, `develop`, and manual dispatch.
-- All steps are **conditional** on `hashFiles('**/package.json') != ''` — they are skipped when no `package.json` exists.
+- A preliminary `check` job detects `package.json`; lint, test, and build jobs are **skipped entirely** (no runner allocated) when it is absent.
 - Uses `actions/checkout@v6` and `actions/setup-node@v6`.
 
 ### CodeQL (`.github/workflows/codeql-analysis.yml`)
@@ -103,7 +103,7 @@ SECURITY.md                       ← Security policy and vulnerability reportin
 
 ### Dependabot (`.github/dependabot.yml`)
 - Weekly updates for: npm, pip, Docker, GitHub Actions.
-- Reviewer: `sealad886`. Labels: `dependencies`, `automated`.
+- Reviewer: `sealad886`. Labels: `dependencies`, `automated`, plus ecosystem-specific labels (e.g. `github-actions`, `docker`).
 
 ---
 
@@ -179,7 +179,7 @@ schema_version: 1
 
 ### 6.4 — Limits & Guidelines
 
-- **Maximum length:** ~2 pages. Be concise but complete.
+- **Maximum length (per-repo instruction files):** ~2 pages (~800–1000 words). Keep those concise but complete. This org-wide default instructions file may be longer to accommodate the generic onboarding procedure (§6).
 - **Not task-specific:** Do not include instructions for a particular feature or bug.
 - **Trust the instructions:** End the file by telling the agent to trust these instructions and only search the codebase when the instructions are incomplete or found to be incorrect.
 - When updating an existing file, you may either do a full rewrite or an incremental update based on `git log --oneline <last_updated_commit>..HEAD`.
