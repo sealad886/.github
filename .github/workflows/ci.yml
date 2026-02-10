@@ -11,8 +11,28 @@ permissions:
   contents: read
 
 jobs:
+  check:
+    name: Check for package.json
+    runs-on: ubuntu-latest
+    outputs:
+      has_package_json: ${{ steps.check.outputs.has_package_json }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+        with:
+          sparse-checkout: package.json
+
+      - name: Check for package.json
+        id: check
+        run: |
+          if [ -f "package.json" ]; then
+            echo "has_package_json=true" >> "$GITHUB_OUTPUT"
+          fi
+
   lint:
     name: Lint
+    needs: check
+    if: needs.check.outputs.has_package_json == 'true'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -22,18 +42,17 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: 'lts/*'
-        if: hashFiles('**/package.json') != ''
 
       - name: Install dependencies
         run: npm ci
-        if: hashFiles('**/package.json') != ''
 
       - name: Run linter
         run: npm run lint --if-present
-        if: hashFiles('**/package.json') != ''
 
   test:
     name: Test
+    needs: check
+    if: needs.check.outputs.has_package_json == 'true'
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -46,18 +65,17 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: ${{ matrix.node-version }}
-        if: hashFiles('**/package.json') != ''
 
       - name: Install dependencies
         run: npm ci
-        if: hashFiles('**/package.json') != ''
 
       - name: Run tests
         run: npm test --if-present
-        if: hashFiles('**/package.json') != ''
 
   build:
     name: Build
+    needs: check
+    if: needs.check.outputs.has_package_json == 'true'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -67,12 +85,9 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: 'lts/*'
-        if: hashFiles('**/package.json') != ''
 
       - name: Install dependencies
         run: npm ci
-        if: hashFiles('**/package.json') != ''
 
       - name: Build project
         run: npm run build --if-present
-        if: hashFiles('**/package.json') != ''
