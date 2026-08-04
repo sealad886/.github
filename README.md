@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/default-banner.webp" alt="sealad886 — Building tools. Solving problems. Sharing knowledge." width="100%">
+</p>
+
 # .github
 
 Default community health files for [@sealad886](https://github.com/sealad886) repositories.
