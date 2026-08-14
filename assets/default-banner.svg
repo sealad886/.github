@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 720" role="img" aria-labelledby="title desc">
+  <title id="title">sealad886 .github Templates</title>
+  <desc id="desc">A dark blue banner for the sealad886 default GitHub community-health repository, highlighting consistent, accelerated, reliable, and scalable repository templates.</desc>
+
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#020617"/>
+      <stop offset="0.58" stop-color="#06152f"/>
+      <stop offset="1" stop-color="#082552"/>
+    </linearGradient>
+    <radialGradient id="rightGlow" cx="74%" cy="40%" r="48%">
+      <stop offset="0" stop-color="#2563eb" stop-opacity="0.32"/>
+      <stop offset="0.45" stop-color="#1d4ed8" stop-opacity="0.11"/>
+      <stop offset="1" stop-color="#020617" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#67b6ff"/>
+      <stop offset="0.55" stop-color="#4f8cff"/>
+      <stop offset="1" stop-color="#315efb"/>
+    </linearGradient>
+    <linearGradient id="folderStroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8ac7ff"/>
+      <stop offset="0.52" stop-color="#5c95ff"/>
+      <stop offset="1" stop-color="#3366ff"/>
+    </linearGradient>
+    <linearGradient id="waveStroke" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1d4ed8" stop-opacity="0"/>
+      <stop offset="0.4" stop-color="#377dff" stop-opacity="0.55"/>
+      <stop offset="0.72" stop-color="#6eb6ff" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#2f62ff" stop-opacity="0.55"/>
+    </linearGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="2" fill="#4d89ff" opacity="0.38"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000814" flood-opacity="0.5"/>
+    </filter>
+    <filter id="glow" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="9" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="smallGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="clip">
+      <rect x="12" y="12" width="1576" height="696" rx="34"/>
+    </clipPath>
+  </defs>
+
+  <g filter="url(#shadow)">
+    <rect x="12" y="12" width="1576" height="696" rx="34" fill="url(#background)"/>
+    <rect x="13" y="13" width="1574" height="694" rx="33" fill="none" stroke="#244274" stroke-opacity="0.52" stroke-width="2"/>
+  </g>
+
+  <g clip-path="url(#clip)">
+    <rect x="12" y="12" width="1576" height="696" fill="url(#rightGlow)"/>
+
+    <path d="M90 472 C360 382 650 496 904 432 C1140 373 1348 238 1598 284" fill="none" stroke="#16346f" stroke-opacity="0.22" stroke-width="2"/>
+    <path d="M84 500 C351 408 650 525 928 448 C1160 383 1372 252 1600 304" fill="none" stroke="#2456b6" stroke-opacity="0.17" stroke-width="2"/>
+
+    <rect x="1338" y="55" width="214" height="154" fill="url(#dots)" opacity="0.82"/>
+    <rect x="49" y="588" width="220" height="102" fill="url(#dots)" opacity="0.64"/>
+
+    <g opacity="0.72">
+      <circle cx="1265" cy="315" r="226" fill="none" stroke="#1e4fa8" stroke-width="2"/>
+      <circle cx="1265" cy="315" r="196" fill="none" stroke="#295fc5" stroke-width="2"/>
+      <circle cx="1265" cy="315" r="162" fill="none" stroke="#3f7bff" stroke-width="3"/>
+      <circle cx="1265" cy="315" r="161" fill="none" stroke="#7bb8ff" stroke-opacity="0.22" stroke-width="8" filter="url(#smallGlow)"/>
+    </g>
+
+    <g fill="#7bb8ff" filter="url(#smallGlow)">
+      <circle cx="973" cy="131" r="3.4"/>
+      <circle cx="1032" cy="190" r="2.6"/>
+      <circle cx="1108" cy="148" r="3.1"/>
+      <circle cx="1423" cy="234" r="3.2"/>
+      <circle cx="1483" cy="284" r="2.8"/>
+    </g>
+
+    <g transform="translate(88 77)">
+      <circle cx="34" cy="34" r="34" fill="#f8fafc"/>
+      <g transform="translate(14 14)" fill="none" stroke="#071225" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="8" cy="9" r="5" fill="#071225" stroke="none"/>
+        <circle cx="31" cy="7" r="5" fill="#071225" stroke="none"/>
+        <circle cx="30" cy="31" r="5" fill="#071225" stroke="none"/>
+        <path d="M13 9h7c7 0 11 3 11 9v8"/>
+        <path d="M13 9v19c0 4 3 7 7 7h5"/>
+      </g>
+      <text x="86" y="46" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="38" font-weight="650" letter-spacing="0.2">
+        <tspan fill="url(#accent)">sealad886</tspan><tspan fill="#f8fafc"> /.github</tspan>
+      </text>
+    </g>
+
+    <text x="91" y="270" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="102" font-weight="820" letter-spacing="-4">
+      <tspan fill="url(#accent)">.github</tspan><tspan fill="#f8fafc"> Templates</tspan>
+    </text>
+    <text x="95" y="346" fill="#d8e3f3" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="34" font-weight="430" letter-spacing="0.1">
+      <tspan x="95" dy="0">Opinionated, reusable defaults that standardize</tspan>
+      <tspan x="95" dy="49">and accelerate every repository.</tspan>
+    </text>
+
+    <g filter="url(#glow)">
+      <path d="M1127 230h86c15 0 22 5 31 15l24 28h133c18 0 31 13 31 31v19h15c18 0 31 13 31 31v121c0 20-15 35-35 35h-277c-20 0-35-15-35-35V265c0-20 16-35 36-35z" fill="#071b40" fill-opacity="0.82" stroke="url(#folderStroke)" stroke-width="9" stroke-linejoin="round"/>
+      <path d="M1135 309h260c18 0 33 15 33 33v125" fill="none" stroke="#214c9a" stroke-width="4" stroke-opacity="0.75"/>
+    </g>
+    <g transform="translate(1208 315)">
+      <path d="M0 0h99l42 42v126c0 12-9 21-21 21H0c-12 0-21-9-21-21V21C-21 9-12 0 0 0z" fill="#092050" stroke="url(#folderStroke)" stroke-width="7" stroke-linejoin="round"/>
+      <path d="M99 0v42h42" fill="none" stroke="url(#folderStroke)" stroke-width="7" stroke-linejoin="round"/>
+      <g fill="none" stroke="url(#accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M31 105 11 125l20 20"/>
+        <path d="m88 105 20 20-20 20"/>
+        <path d="m66 91-16 68"/>
+      </g>
+    </g>
+
+    <g transform="translate(92 520)" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+      <g transform="translate(0 0)">
+        <g fill="none" stroke="url(#accent)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 2h28l13 13v43H6z"/>
+          <path d="M34 2v14h13"/>
+          <path d="M17 33h20M17 45h15"/>
+        </g>
+        <text x="69" y="20" fill="#f8fafc" font-size="25" font-weight="700">Consistent</text>
+        <text x="69" y="52" fill="#bdcbe0" font-size="20">Best practices</text>
+      </g>
+      <line x1="282" y1="1" x2="282" y2="62" stroke="#4167a6" stroke-opacity="0.75" stroke-width="2"/>
+      <g transform="translate(320 0)">
+        <g fill="none" stroke="url(#accent)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M11 38c11-22 25-31 43-34-2 19-12 34-34 44z"/>
+          <path d="m31 26 12 12"/>
+          <circle cx="39" cy="18" r="4" fill="#5f9eff" stroke="none"/>
+          <path d="M13 42 4 53M27 50l-5 12"/>
+        </g>
+        <text x="76" y="20" fill="#f8fafc" font-size="25" font-weight="700">Accelerated</text>
+        <text x="76" y="52" fill="#bdcbe0" font-size="20">Developer experience</text>
+      </g>
+      <line x1="602" y1="1" x2="602" y2="62" stroke="#4167a6" stroke-opacity="0.75" stroke-width="2"/>
+      <g transform="translate(640 0)">
+        <g fill="none" stroke="url(#accent)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M28 2 51 11v18c0 15-9 26-23 33C14 55 5 44 5 29V11z"/>
+          <path d="m18 31 8 8 14-17"/>
+        </g>
+        <text x="75" y="20" fill="#f8fafc" font-size="25" font-weight="700">Reliable</text>
+        <text x="75" y="52" fill="#bdcbe0" font-size="20">Secure by default</text>
+      </g>
+      <line x1="882" y1="1" x2="882" y2="62" stroke="#4167a6" stroke-opacity="0.75" stroke-width="2"/>
+      <g transform="translate(920 0)">
+        <g fill="none" stroke="url(#accent)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="20" cy="20" r="10"/>
+          <circle cx="46" cy="23" r="8"/>
+          <path d="M2 58c1-15 8-23 21-23s21 8 22 23"/>
+          <path d="M39 39c13 0 20 7 21 19"/>
+        </g>
+        <text x="76" y="20" fill="#f8fafc" font-size="25" font-weight="700">Scalable</text>
+        <text x="76" y="52" fill="#bdcbe0" font-size="20">Built for teams</text>
+      </g>
+    </g>
+
+    <g fill="none" stroke-linecap="round">
+      <path d="M170 701 C430 552 760 730 1035 642 C1275 565 1410 438 1605 382" stroke="#173e8a" stroke-width="2" opacity="0.72"/>
+      <path d="M130 715 C430 564 742 750 1046 654 C1284 579 1427 452 1605 399" stroke="#245dc9" stroke-width="3" opacity="0.72"/>
+      <path d="M110 730 C404 578 748 764 1064 662 C1310 584 1436 468 1608 417" stroke="url(#waveStroke)" stroke-width="5" filter="url(#smallGlow)"/>
+      <path d="M84 744 C392 596 760 778 1082 678 C1328 601 1464 492 1614 445" stroke="#508df8" stroke-width="2" opacity="0.7"/>
+      <path d="M62 762 C386 614 762 795 1099 696 C1351 622 1481 519 1618 478" stroke="#173e8a" stroke-width="2" opacity="0.64"/>
+    </g>
+  </g>
+</svg>
