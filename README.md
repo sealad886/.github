@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/default-banner.webp" alt="sealad886 — Building tools. Solving problems. Sharing knowledge." width="100%">
+  <img src="assets/default-banner.svg" alt="sealad886 .github Templates — opinionated, reusable defaults for consistent repositories." width="100%">
 </p>
 
 # .github
